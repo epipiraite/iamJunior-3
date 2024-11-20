@@ -1,0 +1,78 @@
+:root {
+    --primary-color: red;
+    --menu-item-border-color: yellow;
+    --contact-btn-color: orange;
+    --contactact-btn-border-height: 2px;
+    --gap: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.top-navigation ul {
+    display: flex;
+    gap: var(--gap);
+}
+
+.top-navigation ul:hover {
+    gap: var(--gap);
+}
+
+/* CTRL + /  */
+.top-navigation {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.top-navigation a {
+    color: black;
+    text-decoration: none;
+}
+
+.top-logo {
+    font-size: 32px;
+}
+
+.top-navigation ul > li > a {
+    transition: all 0.5s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 6px;
+}
+
+.top-navigation ul>li>a:hover {
+    color: var(--primary-color);
+    border-bottom-color: var(--menu-item-border-color);
+}
+
+.top-navigation .contact-btn {
+    border: var(--contactact-btn-border-height) solid var(--primary-color);
+    border-radius: 20px;
+    padding: 8px 12px;
+    color: var(--contact-btn-color);
+    transition: all 0.5s;
+}
+
+.top-navigation .contact-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
